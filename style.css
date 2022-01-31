@@ -18,8 +18,13 @@ a {
     transition: all 0.1s ease;
 }
 
+a:hover{
+    color: var(--red);
+}
 button{
     border: none;
+    background: none;
+    color: #020202;
 }
 
 :root {
@@ -62,6 +67,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
+    z-index: 100;
 }
 
 .name{
@@ -76,6 +82,7 @@ nav{
 .play_btn img{
     width: 90px;
     height: auto;
+    background: transparent;
 }
 
 footer{
@@ -133,7 +140,7 @@ footer a:hover{
     font-size: 1.1em;
 }
 
-.option:hover{
+.option:hover, .option:active{
     border: none;
     color: white;
     background: linear-gradient(45deg, #e94646, #F05454);;
