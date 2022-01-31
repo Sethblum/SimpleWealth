@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +38,26 @@
                 Welcome to Level up your Life, Ready to Play? 
             </div>
             <div class="options flex-column flex-md-row animate__animated animate__bounceIn">
-                <button onclick="collect('play$o1$q1')" class="play_btn">
+                <button onclick="collect('play$o1$about')" class="play_btn">
                     <img src="images/play.png" alt="play">
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="animate__animated animate__fadeIn">
+        <div class="question-container">
+            <div class="sub-title sb-1 blue">
+                Take a journey through life. 
+            </div>
+            <div class="sub-title sb-2 blue">
+                Wealth creation takes decades. 
+            </div>
+            <div class="sub-title sb-3 blue">
+                Learn how to create wealth and the life of your dreams.  
+            </div>
+            <div class="options flex-column flex-md-row animate__animated animate__bounceIn">
+                <button onclick="collect('about$o1$q1')" class="play_btn">
+                    <img src="images/right.png" alt="next">
                 </button>
             </div>
         </div>
@@ -50,7 +69,7 @@
                 Congrats you were just accepted into college, choose your path.
             </div>
             <div class="options flex-column flex-md-row">
-                <button onclick="collect('q1$o1$q2-a')" class="option ">
+                <button  onclick="collect('q1$o1$q2-a')" class="option ">
                     Out-of-state University, go $50,000 into debt
                 </button>
                 <button onclick="collect('q1$o2$q2-b')" class="option ">
