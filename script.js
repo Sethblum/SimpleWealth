@@ -10,6 +10,15 @@ function collect(answer){
     var question = answer[0];
     var option = answer[1];
     var next = answer[2];
+    if (next == "about"){
+        $('.sb-1').addClass('active');
+        setTimeout(function(){
+            $('.sb-2').addClass('active');
+        },700);
+        setTimeout(function(){
+            $('.sb-3').addClass('active');
+        },1400);
+    }
     answers.push(question + " chose- " +option+ next);
     console.log(answers);
     document.getElementById(question).style.display = "none";
