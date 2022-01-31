@@ -183,6 +183,34 @@ footer a:hover{
     font-size: 2.7em !important;
 }
 
+.sub-title{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 25px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    color: var(--blue);
+    font-size: 2.5em;
+}
+
+.sb-1{
+    transition: all 600ms ease-in-out;
+    opacity: 0;
+}
+.sb-2{
+    transition: all 600ms ease-in-out;
+    opacity: 0;
+}
+.sb-3{
+    transition: all 600ms ease-in-out;
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+
 @media (max-width: 575.98px) {
 
 }
@@ -202,6 +230,9 @@ footer a:hover{
     }
     .prompt-text{
         font-size: 1.4em !important;
+    }
+    .sub-title{
+        font-size: 1.6em;
     }
 }
 
